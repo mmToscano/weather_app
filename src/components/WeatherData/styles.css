@@ -1,0 +1,65 @@
+.weatherDataMain {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.weatherDataMain h1 {
+    font-size: 50px;
+    margin-bottom: 0.8rem;
+}
+
+.cityInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cityInfo h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.weatherStatus {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.weatherStatus h3 {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.weatherDetails {
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisor {
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+.humidity {
+    display: flex;
+}
+
+.windSpeed {
+    display: flex;
+}
+
+.humidity h3, .windSpeed h3 {
+    margin-left: 0.5rem;
+    color: white;
+}

@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid green 3px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("C:\Users\MMora\Programacao\VisualStudio\ReactJs\weather-app\src\imgs\bg-weather.jpg");
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}

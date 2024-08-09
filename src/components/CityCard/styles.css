@@ -1,0 +1,11 @@
+.card {
+    min-width: 9rem;
+    padding: 9px;
+    border-radius: 1rem;
+    background-color: #8dd0f5;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+    cursor: pointer;
+}

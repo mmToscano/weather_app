@@ -1,18 +1,27 @@
 import styles from "./styles.css"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faLocationDot, faFlag, faCloud, faDroplet, faWind } from '@fortawesome/free-solid-svg-icons';
 
-function WeatherData() {
+function WeatherData(weatherData) {
 
-    const [city, setCity] = useState("Osaka");
-    const [temperature, setTemperature] = useState(28.5);
-    const [weather, setWeather] = useState("Nublado");
-    const [humidity, setHumidity] = useState(55.2);
-    const [windSpeed, setWindSpeed] = useState(2.2);
+    const [city, setCity] = useState("");
+    const [temperature, setTemperature] = useState();
+    const [weather, setWeather] = useState("");
+    const [humidity, setHumidity] = useState();
+    const [windSpeed, setWindSpeed] = useState();
+
+    useEffect(() => {
+        console.log(weatherData)
+        setCity(weatherData.data.name);
+        setTemperature(weatherData.data.main.temp);
+        setWeather(weatherData.data.weather[0].description);
+        setHumidity(weatherData.data.main.humidity);
+        setWindSpeed(Math.floor(weatherData.data.wind.speed * 3.6));
+    }, [])
 
     return(
         <div className="weatherDataMain">
